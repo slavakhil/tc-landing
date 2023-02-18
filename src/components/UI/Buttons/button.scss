@@ -1,0 +1,59 @@
+.btn-1 {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 24px;
+    padding: 16px 32px;
+    width: 300px;
+    height: 80px;
+    border: none;
+    background: #7ab1ff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 30px #ffffff;
+    border-radius: 144px;
+    color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 0px 60px #ffffff;
+    }
+    &:active {
+        background: #5992ce;
+        box-shadow: 0px 0px 60px #ffffff;
+    }
+}
+.btn-2 {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 24px;
+    padding: 16px 32px;
+    width: 300px;
+    height: 80px;
+    border: none;
+    background: #95d8f7;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 30px #ffffff;
+    border-radius: 144px;
+    color: #242151;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 0px 60px #ffffff;
+    }
+    &:active {
+        background: #53bced;
+        box-shadow: 0px 0px 60px #ffffff;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .btn-1 {
+        font-size: 17px;
+        width: 250px;
+        height: 60px;
+    }
+    .btn-2 {
+        font-size: 17px;
+        width: 250px;
+        height: 60px;
+    }
+}

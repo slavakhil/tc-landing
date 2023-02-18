@@ -1,0 +1,88 @@
+.card-container{
+    width: 600px;
+    height: 160px;
+    padding: 9px 56px 9px 80px;
+    background: #FFFFFF;
+    border: 4px dashed #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left{
+    flex-direction: row-reverse;
+    padding: 9px 80px 9px 30px;
+}
+
+.card-text{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.mdl-text{
+    font-weight: 700;
+}
+
+.card-image{
+    width: 266px;
+    height: 182px;
+    -webkit-user-drag: none;    
+}
+
+@media screen and (max-width: 1160px) {
+    .card-container{
+        width: 500px;
+        padding: 10px 20px 10px 60px;
+    }
+    .card-text{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .left{
+        padding: 9px 20px 9px 10px;
+    }
+    .card-image{
+        width: 236px;
+        height: 152px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card-container{
+        width: 400px;
+        padding: 10px 0px 10px 20px;
+    }
+    .card-text{
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .left{
+        padding: 9px 20px 9px 10px;
+    }
+    .card-image{
+        width: 236px;
+        height: 152px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .card-container{
+        width: 270px;
+        padding: 5px 10px 5px 30px;
+    }
+    .card-text{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .left{
+        padding: 5px 30px 5px 0px;
+    }
+    .card-image{
+        width: 174px;
+        height: 100px;
+    }
+}

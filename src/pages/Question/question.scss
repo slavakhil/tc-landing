@@ -1,0 +1,40 @@
+.question-container{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    .break{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .question-container{
+        margin-bottom: 50px;
+        .break{
+            margin-bottom: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .question-container{
+        margin-bottom: 50px;
+        .break{
+            margin-bottom: 90px;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .question-container{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        .break{
+            margin-bottom: 60px;
+        }
+    }
+}
+
+

@@ -1,0 +1,98 @@
+.bubble-wrapper {
+  .bubble {
+    width: 800px;
+    height: auto;
+    display: block;
+    background: #fff;
+    border-radius: 100px;
+    position: relative;
+    .txt {
+      padding: 34px 61px 34px 53px;
+      .message {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: #242151;
+      }
+    }
+    .bubble-arrow {
+      position: absolute;
+      width: 0;
+      bottom: 30px;
+      left: 50px;
+      height: 0;
+      &.right {
+        right: 70px;
+        bottom: 30px;
+        left: auto;
+      }
+    }
+    .bubble-arrow:after {
+      content: "";
+      position: absolute;
+      border: 0 solid transparent;
+      border-top: 17px solid #fff;
+      border-radius: 0px 40px 0px;
+      width: 40px;
+      height: 50px;
+      transform: rotate(100deg);
+    }
+    .bubble-arrow.right:after {
+      transform: rotate(70deg) scaleY(-1);
+    }
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .bubble-wrapper {
+    .bubble {
+      width: 580px;
+      .txt {
+        padding: 10px 40px 10px 60px;
+        .message {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .bubble-wrapper {
+    .bubble {
+      width: 450px;
+      .txt {
+        padding: 17px 31px 17px 40px;
+        .message {
+          font-size: 17px;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .bubble-wrapper {
+    .bubble {
+      width: 300px;
+      border-radius: 70px;
+      .txt {
+        padding: 10px 20px 10px 25px;
+        .message {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      .bubble-arrow {
+        left: 30px;
+        &.right {
+          right: 50px;
+        }
+      }
+    }
+  }
+}

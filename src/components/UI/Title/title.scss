@@ -1,0 +1,19 @@
+.title {
+    font-family: "Nunito";
+    font-style: normal;
+    width: 450px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    color: #242151;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 570px) {
+    .title {
+        width: 350px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+}

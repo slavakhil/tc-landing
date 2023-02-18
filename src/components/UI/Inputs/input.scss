@@ -1,0 +1,54 @@
+.inp-container {
+    margin-bottom: 20px;
+}
+
+.lbl {
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: "Nunito";
+}
+
+.inp {
+    width: 530px;
+    height: 40px;
+    background: #e4fff9;
+    border: 1px solid #ffffff;
+    font-family: "Nunito";
+    box-shadow: 0px 0px 5px #ffffff;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 7.5px 14.5px 6px 14.5px;
+    margin-top: 7px;
+    &:focus {
+        outline: none;
+        background-color: #edfffb;
+    }
+    &:required {
+        border: 1px solid #ff0000;
+        box-shadow: 0px 0px 5px #ff0000;
+    }
+}
+
+.inp-comm {
+    height: 130px;
+    resize: none;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 750px) {
+    .inp {
+        width: 450px;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .lbl {
+        font-size: 17px;
+    }
+
+    .inp {
+        width: 250px;
+        font-size: 17px;
+    }
+}

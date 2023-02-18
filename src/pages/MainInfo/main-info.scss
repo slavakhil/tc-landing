@@ -1,0 +1,104 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    .info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .info-info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            .title-info {
+                font-family: "Nunito";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 60px;
+                margin-bottom: 20px;
+                color: #242151;
+            }
+            .description-info {
+                width: 580px;
+                margin-bottom: 60px;
+                .description-info__el {
+                    font-family: "Nunito";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .image-info {
+            width: 480px;
+            height: 430px;
+            -webkit-user-drag: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .info {
+        .info-container {
+            flex-direction: column;
+            align-items: center;
+            .info-info {
+                .description-info {
+                    .description-info__el {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .info {
+        .info-container {
+            flex-direction: column;
+            align-items: center;
+            .info-info {
+                .title-info {
+                    font-size: 50px;
+                }
+                .description-info {
+                    width: 450px;
+                    .description-info__el {
+                        font-size: 21px;
+                    }
+                }
+            }
+            .image-info {
+                width: 450px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .info {
+        .info-container {
+            flex-direction: column;
+            align-items: center;
+            .info-info {
+                .title-info {
+                    font-size: 40px;
+                }
+                .description-info {
+                    width: 300px;
+                    .description-info__el {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .image-info {
+                width: 300px;
+                height: 250px;
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+.speech-bubble {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-bottom: 200px;
+  .speech-image {
+    width: 245px;
+    height: 263px;
+    align-self: flex-start;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -80px;
+  }
+}
+.speech-wrapper {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  .bubble {
+    width: 390px;
+    height: 155px;
+    display: block;
+    background: #fff;
+    border-radius: 200px;
+    position: relative;
+    .txt {
+      display: flex;
+      flex-direction: column;
+      height: 155px;
+      width: 390px;
+      align-items: center;
+      justify-content: center;
+
+      .message {
+        width: 350px;
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: #242151;
+        text-align: center;
+      }
+    }
+    .bubble-arrow {
+      position: absolute;
+      width: 0;
+      bottom: 25px;
+      left: 10px;
+      height: 0;
+    }
+    .bubble-arrow:after {
+      content: "";
+      position: absolute;
+      border: 0 solid transparent;
+      border-top: 10px solid #fff;
+      border-radius: 0px 40px 0px;
+      width: 40px;
+      height: 50px;
+      transform: rotate(110deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .speech-bubble {
+    width: 450px;
+    margin-bottom: 150px;
+    .speech-image {
+      margin-left: -50px;
+      width: 200px;
+      height: 217px;
+    }
+  }
+  .speech-wrapper {
+    .bubble {
+      width: 340px;
+      height: 140px;
+      .txt {
+        height: 140px;
+        width: 340px;
+        .message {
+          width: 330px;
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .speech-bubble {
+    width: 390px;
+    margin-bottom: 120px;
+    .speech-image {
+      position: absolute;
+      margin-top: 60px;
+      margin-left: -40px;
+      width: 180px;
+      height: 197px;
+      align-self: flex-start;
+    }
+  }
+  .speech-wrapper {
+    .bubble {
+      width: 300px;
+      height: 100px;
+      .txt {
+        height: 100px;
+        width: 300px;
+        .message {
+          width: 290px;
+          font-size: 17px;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .speech-bubble {
+    width: 290px;
+    margin-bottom: 140px;
+    .speech-image {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: -20px;
+      width: 120px;
+      height: 137px;
+      align-self: flex-start;
+    }
+  }
+
+  .speech-wrapper {
+    .bubble {
+      width: 230px;
+      height: 100px;
+      border-radius: 50px;
+      .txt {
+        height: 100px;
+        width: 230px;
+        .message {
+          width: 220px;
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

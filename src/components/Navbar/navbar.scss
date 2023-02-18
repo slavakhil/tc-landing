@@ -1,0 +1,147 @@
+.ant-layout-header {
+    position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+    
+    
+  }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #E5F0FF;
+    
+  }
+  .header .title-header{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #242151;
+  }
+  
+  .header .logo {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    
+  }
+  
+  .header .logo .fas {
+    color: #1890ff;
+    margin: 0 5px 0 0;
+    font-size: 28px;
+    
+  }
+  
+  .header .logo a {
+    color: #333;
+  }
+  
+  .header .ant-anchor-wrapper {
+    
+  }
+  
+  .header .ant-anchor {
+    display: flex;
+  }
+  
+  .header .ant-anchor-ink {
+    display: none;
+  }
+  
+  .header .ant-anchor-link {
+    padding: 0 20px;
+    line-height: 1.4;
+    position: relative;
+    
+  }
+
+  .ant-anchor-link{
+    margin-left: 20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    
+/* identical to box height */
+
+text-align: center;
+
+color: #242151;
+  }
+
+  .mobile-close{
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  
+  .header .ant-anchor-link:before,
+  .header .ant-anchor-link:after {
+    content: '';
+    background: #1890ff;
+    width: 1px;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 40%;
+    opacity: 0;
+    transition: all 0.3s linear;
+    
+  }
+  
+  .header .ant-anchor-link:after {
+    left: auto;
+    right: 30%;
+  }
+  
+  .header .ant-anchor-link.ant-anchor-link-active:before,
+  .header .ant-anchor-link:hover:before {
+    left: 10px;
+    opacity: 1;
+  }
+  
+  .header .ant-anchor-link.ant-anchor-link-active:after,
+  .header .ant-anchor-link:hover:after {
+    right: -10px;
+    opacity: 1;
+  }
+  .mobileVisible {
+    display: none;
+  }
+  
+  .mobileHidden {
+    display: block;
+  }
+  
+  /* ant menu */
+
+  @media only screen and (max-width: 991px) {
+    .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+      transform: scale(1.14);
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+      transform: scale(1);
+    }
+  
+    .mobileVisible {
+      display: block;
+    }
+    
+    .mobileHidden {
+      display: none;
+    }
+  }
+  
