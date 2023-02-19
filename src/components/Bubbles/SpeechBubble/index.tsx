@@ -5,21 +5,21 @@ type ISpeechBubble = {
   image: string;
   text1: string;
   text2: string;
-  style: string;
+  type: string;
 };
 
 export const SpeechBubble: React.FC<ISpeechBubble> = ({
   image,
   text1,
   text2,
-  style,
+  type,
 }) => {
   return (
     <div className="speech-bubble">
-      <img src={image} className="speech-image" />
+      <img src={image} className="speech-image" alt="" />
       <div className="speech-wrapper">
         <div className={`bubble`}>
-          {style === "text1" && (
+          {type === "text1" && (
             <div>
               <div className="txt">
                 <div style={{ fontWeight: "700" }} className="message">
@@ -29,7 +29,7 @@ export const SpeechBubble: React.FC<ISpeechBubble> = ({
               </div>
             </div>
           )}
-          {style === "text2" && (
+          {type === "text2" && (
             <div>
               <div className="txt">
                 <div className="message">{text1}</div>
@@ -39,7 +39,7 @@ export const SpeechBubble: React.FC<ISpeechBubble> = ({
               </div>
             </div>
           )}
-          {style === "text3" && (
+          {type === "text3" && (
             <div>
               <div className="txt">
                 <div className="message">{text1}</div>

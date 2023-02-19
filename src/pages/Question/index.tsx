@@ -13,9 +13,9 @@ export const Question: React.FC = () => {
     const dataQuestion = data.questions
     return(
         <div id='question' className='question-container'>
-            <SpeechBubble style='text3' image={imageSpeech} text1={dataQuestion.card6.text1} text2={dataQuestion.card6.text2} />
+            <SpeechBubble type='text3' image={imageSpeech} text1={dataQuestion.card6.text1} text2={dataQuestion.card6.text2} />
             <div className='break'></div>
-            <Button text='Задать вопрос' onClick={handleClick} style='btn-2'/>
+            <Button text='Задать вопрос' onClick={handleClick} type='btn-2'/>
         </div>
     )
 }

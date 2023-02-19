@@ -17,7 +17,7 @@ export const ExplainWork: React.FC = () => {
       <div className="explain-container web">
         <div className="explain-cards">
         {dataHowitWorks.cards.map((el, index) => index%2 === 0 &&
-            <div className="explain-card__element">
+            <div key={index} className="explain-card__element">
               <div className="card-title">
                 <div className="card-img"></div>
                 <div className="card-name">{el.title}</div>
@@ -27,11 +27,11 @@ export const ExplainWork: React.FC = () => {
           )}
         </div>
         <div>
-          <img src={schema} />
+          <img src={schema} alt="" />
         </div>
         <div className="explain-cards">
         {dataHowitWorks.cards.map((el, index) => index%2 === 1 &&
-            <div className="explain-card__element">
+            <div key={index} className="explain-card__element">
               <div className="card-title">
                 <div className="card-img"></div>
                 <div className="card-name">{el.title}</div>
@@ -43,8 +43,8 @@ export const ExplainWork: React.FC = () => {
       </div>
       <div className="explain-container mobile">
         <div className="explain-cards">
-          {dataHowitWorks.cards.map((el) => (
-            <div className="explain-card__element">
+          {dataHowitWorks.cards.map((el, index) => (
+            <div key={index} className="explain-card__element">
               <div className="card-title">
                 <div className="card-img"></div>
                 <div className="card-name">{el.title}</div>
@@ -54,9 +54,9 @@ export const ExplainWork: React.FC = () => {
           ))}
         </div>
         <div>
-          <img className="schema1" src={schema1} />
-          <img className="schema2" src={schema2} />
-          <img className="schema3" src={schema3} />
+          <img className="schema1" src={schema1} alt="" />
+          <img className="schema2" src={schema2} alt="" />
+          <img className="schema3" src={schema3} alt="" />
         </div>
       </div>
       <Card text={data.card5.text} image={card5} />

@@ -29,18 +29,17 @@ export const Offer: React.FC = () => {
           </div>
 
           <div className="button-offer">
-            <Anchor affix={false}>
-              <Link href="#about">
-                <Button text="Узнать больше" style="btn-1" />
-              </Link>
+            <Anchor affix={false}
+              items={[{key: 'about', href: '#about', title: ''}]}>
             </Anchor>
+            <Button text="Узнать больше" type="btn-1"></Button>
           </div>
         </div>
         <img className="image-offer" src={imageTCMain} alt="" />
       </div>
       
       <SpeechBubble
-        style="text1"
+        type="text1"
         image={imageSpeech}
         text1={dataTitle.info.card1.text1}
         text2={dataTitle.info.card1.text2}

@@ -15,10 +15,10 @@ export const Advantages: React.FC = () => {
           {
           dataAdvantages.adv.map((el, index) => (
             (index % 2 === 0) &&
-            <div className="row">
+            <div key={index} className="row">
               <div className="advantages-element">
                 <div className="advantages-element__title">
-                  <img className="advantage-img"></img>
+                  <img className="advantage-img" alt=""></img>
                   <div className="advantage-title">{dataAdvantages.adv[index].title}</div>
                 </div>
                 <div className="advantages-element__description">
@@ -27,7 +27,7 @@ export const Advantages: React.FC = () => {
               </div>
               <div className="advantages-element">
                 <div className="advantages-element__title">
-                  <img className="advantage-img"></img>
+                  <img className="advantage-img" alt=""></img>
                   <div className="advantage-title">{dataAdvantages.adv[index + 1].title}</div>
                 </div>
                 <div className="advantages-element__description">
@@ -40,7 +40,7 @@ export const Advantages: React.FC = () => {
         <div style={{ marginBottom: "80px" }}></div>
         <SpeechBubble
           image={imageSpeech}
-          style="text2"
+          type="text2"
           text1={data.card4.text1}
           text2={data.card4.text2}
         />

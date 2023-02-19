@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  <>
     <App />
     <ToastContainer
       position="bottom-right"
@@ -23,5 +23,5 @@ root.render(
       pauseOnHover={false}
       theme="light"
     />
-  </React.StrictMode>
+  </>
 );

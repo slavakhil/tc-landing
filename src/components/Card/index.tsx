@@ -1,6 +1,5 @@
 import React from 'react'
 import './card.scss'
-import card4 from '../../assets/card4.svg'
 
 type ICard = {
     text: string,

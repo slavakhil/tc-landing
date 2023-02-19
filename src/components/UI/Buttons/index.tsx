@@ -3,17 +3,17 @@ import './button.scss'
 
 type IButton = {
     text: string,
-    style: string,
+    type: string,
     onClick?: () => void
 
 }
 
 export const Button: React.FC<IButton> = ({ 
     text, 
-    style, 
+    type, 
     onClick
 }) => {
     return(
-        <button className={style} onClick={onClick}>{text}</button>
+        <button className={type} onClick={onClick}>{text}</button>
     )
 }

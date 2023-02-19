@@ -10,11 +10,8 @@ import { MainInfo } from "./pages/MainInfo";
 import { Question } from "./pages/Question";
 import { Offer } from "./pages/Offer";
 import { Header } from "antd/es/layout/layout";
-import { ToastContainer } from "react-toastify";
-import { toast } from "react-toastify";
 
 function App() {
-  const notify = () => toast("Wow so easy!");
   return (
     <>
       <div className="App">
