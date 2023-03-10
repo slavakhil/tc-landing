@@ -1,15 +1,13 @@
 import React from "react";
-import { Button } from "../../components/UI/Buttons";
-import imageTCMain from "../../assets/tenderChadMain1.png";
-import imageSpeech from "../../assets/speech1.png";
-import card from "../../assets/card2.png";
+import imageTCMain from "../../assets/tenderChadMain1.svg";
+import imageSpeech from "../../assets/speech1.svg";
+import card from "../../assets/card2.svg";
 import { data } from "../../data/data";
 import "./offer.scss";
 import { Card } from "../../components/Card";
 import { Bubble } from "../../components/Bubbles/Bubble";
 import { SpeechBubble } from "../../components/Bubbles/SpeechBubble";
 import { Anchor } from "antd";
-import Link from "antd/es/typography/Link";
 
 export const Offer: React.FC = () => {
   const dataTitle = data.offer;
@@ -27,17 +25,14 @@ export const Offer: React.FC = () => {
               {dataTitle.description2}
             </div>
           </div>
-
           <div className="button-offer">
-            <Anchor affix={false}
-              items={[{key: 'about', href: '#about', title: ''}]}>
+            <Anchor targetOffset={100} affix={false}
+              items={[{key: 'about', href: '#about', title: 'Узнать больше'}]}>
             </Anchor>
-            <Button text="Узнать больше" type="btn-1"></Button>
           </div>
         </div>
         <img className="image-offer" src={imageTCMain} alt="" />
       </div>
-      
       <SpeechBubble
         type="text1"
         image={imageSpeech}
@@ -55,9 +50,7 @@ export const Offer: React.FC = () => {
         </div>
       </div>
       <div className="offer-break"></div>
-      
       <Card image={card} text={data.card2} />
-      <div id="about"></div>
     </div>
     </>
   );

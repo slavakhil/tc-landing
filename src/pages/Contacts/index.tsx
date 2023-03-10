@@ -22,15 +22,15 @@ const phoneRegExp = /^[\d\+][\d\(\)\ -]{4,18}\d$/;
 
 const schema = yup
   .object({
-    name: yup.string().required("Поле обязательно к заполнению"),
+    name: yup.string().required("Поле не заполнено"),
     email: yup
       .string()
       .email("Введите электронную почту правильно")
-      .required("Поле обязательно к заполнению"),
+      .required("Поле не заполнено"),
     phone: yup
       .string()
-      .required("Поле обязательно к заполнению")
-      .matches(phoneRegExp, "Введите номер телефона правильно"),
+      .required("Поле не заполнено")
+      .matches(phoneRegExp, "Некорректный ввод"),
     company: yup.string(),
     comment: yup.string(),
   })

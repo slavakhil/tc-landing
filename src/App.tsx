@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import 'antd/dist/antd';
 
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";

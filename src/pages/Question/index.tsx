@@ -2,7 +2,7 @@ import React from 'react';
 import { SpeechBubble } from '../../components/Bubbles/SpeechBubble';
 import { Button } from '../../components/UI/Buttons';
 import { data } from '../../data/data';
-import imageSpeech from '../../assets/speech3.png'
+import imageSpeech from '../../assets/speech3.svg'
 import './question.scss'
 
 const handleClick = () => {

@@ -1,14 +1,14 @@
 import React from 'react';
 import { data } from '../../data/data';
-import imageTCMain from '../../assets/tenderChadMain2.png'
-import card from '../../assets/card3.png'
+import imageTCMain from '../../assets/tenderChadMain2.svg'
+import card from '../../assets/card3.svg'
 import './main-info.scss'
 import { Card } from '../../components/Card';
 
 export const MainInfo: React.FC = () => {
     const dataInfo = data.about
     return (
-        <div id="about1" className='info'>
+        <div id="about" className='info'>
             <div className='info-container'>
                 <img className='image-info' src={imageTCMain} alt="" />
                 <div className='info-info'>

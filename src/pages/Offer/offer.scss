@@ -1,193 +1,252 @@
 .offer .ant-anchor-ink {
     display: none;
 }
-.offer{
+.offer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 
-    .offer-container{
+    .offer-container {
         margin-top: 200px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin-bottom: 80px;
 
-        .info-offer{
+        .info-offer {
             display: flex;
             flex-direction: column;
 
-            .title-offer{
-                font-family: 'Nunito';
+            .title-offer {
+                font-family: "Nunito";
                 font-style: normal;
                 font-weight: 800;
                 font-size: 60px;
                 margin-bottom: 20px;
                 color: #242151;
             }
-            
-            .description-offer{
+
+            .description-offer {
                 width: 500px;
                 margin-bottom: 60px;
 
-                .description-offer__el{
-                    font-family: 'Nunito';
+                .description-offer__el {
+                    font-family: "Nunito";
                     font-style: normal;
                     font-weight: 400;
                     font-size: 24px;
                     line-height: 33px;
                 }
             }
+
+            .button-offer {
+                .ant-anchor {                    
+                    width: 300px;
+                    height: 80px;
+                    border: none;
+                    background: #7ab1ff;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    box-shadow: 0px 0px 30px #ffffff;
+                    border-radius: 144px;
+                    transition: 0.3s;
+                    padding: 0;
+                    cursor: pointer;
+                    &:hover {
+                        box-shadow: 0px 0px 60px #ffffff;
+                    }
+                    &:active {
+                        background: #5992ce;
+                        box-shadow: 0px 0px 60px #ffffff;
+                    }
+                    .ant-anchor-link {
+                        border-radius: 144px;
+                        padding: 0;
+                        margin-left: 0;
+                        .ant-anchor-link-title {
+                            border-radius: 144px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 80px;
+                            width: 300px;
+                            font-family: "Nunito";
+                            font-weight: 700;
+                            font-size: 24px;
+                            text-align: center;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
         }
 
-        .image-offer{
+        .image-offer {
             width: 560px;
             height: 490px;
-            -webkit-user-drag: none;      
+            -webkit-user-drag: none;
         }
     }
-    .offer-bubble{
+    .offer-bubble {
         display: flex;
         flex-direction: column;
         width: 1080px;
-        .bubble-1{
+        .bubble-1 {
             align-self: flex-start;
         }
-        .bubble-2{
+        .bubble-2 {
             align-self: flex-end;
         }
     }
 }
 
-.offer-break{
+.offer-break {
     margin-bottom: 120px;
 }
 
 @media screen and (max-width: 1160px) {
-    .offer{
-        .offer-container{
+    .offer {
+        .offer-container {
             margin-top: 100px; //
             flex-direction: column-reverse; //
-            .info-offer{
+            .info-offer {
                 align-items: center;
-                .title-offer{
+                .title-offer {
                     text-align: center;
                     font-size: 50px;
                     margin-bottom: 10px;
                 }
-                .description-offer{
+                .description-offer {
                     margin-bottom: 40px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    .description-offer__el{
+                    .description-offer__el {
                         text-align: center;
                         font-size: 21px;
                         line-height: 33px;
                     }
                 }
             }
-            .button-offer{
+            .button-offer {
                 display: flex;
                 justify-content: center;
             }
-            .image-offer{
+            .image-offer {
                 display: flex; //
                 width: 450px;
-                height: 380px
+                height: 380px;
             }
         }
-        .offer-bubble{
+        .offer-bubble {
             align-items: center;
             width: auto;
-            .bubble-1{
-                align-self:auto;
+            .bubble-1 {
+                align-self: auto;
             }
-            .bubble-2{
-                align-self:auto;
+            .bubble-2 {
+                align-self: auto;
             }
         }
     }
-    
 }
 
 @media screen and (max-width: 1160px) {
-    .offer{
-        .offer-container{
+    .offer {
+        .offer-container {
             margin-top: 100px;
             flex-direction: column-reverse;
             align-items: center;
             margin-bottom: 80px;
         }
-        .description-offer{
+        .description-offer {
             width: 600px;
-            .description-offer__el{
+            .description-offer__el {
                 font-size: 20px;
                 line-height: 33px;
             }
         }
-        .button-offer{
+        .button-offer {
             display: flex;
             justify-content: center;
         }
-        .image-offer{
+        .image-offer {
             width: 420px;
-            height: 370px
+            height: 370px;
         }
-    }    
+    }
+    .offer-break {
+        margin-bottom: 80px;
+    }
 }
 
 @media screen and (max-width: 750px) {
-    .offer-container{
+    .offer-container {
         margin-top: 100px;
         flex-direction: column-reverse;
         align-items: center;
     }
-    .description-offer{
+    .description-offer {
         width: 400px;
-        .description-offer__el{
+        .description-offer__el {
             font-size: 20px;
             line-height: 33px;
         }
     }
-    .image-offer{
+    .image-offer {
         width: 420px;
-        height: 370px
+        height: 370px;
     }
-    .button-offer{
+    .button-offer {
         display: flex;
         justify-content: center;
+    }
+    .offer-break {
+        margin-bottom: 65px;
     }
 }
 
 @media screen and (max-width: 570px) {
-    .offer{
+    .offer {
         margin-bottom: 70px;
-        .offer-container{
+        .offer-container {
             margin-top: 100px;
             flex-direction: column-reverse;
             margin-bottom: 40px;
-            .info-offer{
-                .title-offer{
+            .info-offer {
+                .title-offer {
                     font-size: 40px;
                 }
-                .description-offer{
+                .description-offer {
                     width: 300px;
                     margin-bottom: 30px;
-                    .description-offer__el{
+                    .description-offer__el {
                         font-size: 16px;
                         line-height: 27px;
                     }
                 }
+                .button-offer {
+                    .ant-anchor {                    
+                        width: 250px;
+                        height: 60px;
+                        .ant-anchor-link {
+                            .ant-anchor-link-title {
+                                height: 60px;
+                                width: 250px;
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
             }
-            .image-offer{
+            .image-offer {
                 width: 300px;
-                height: 250px
+                height: 250px;
             }
         }
     }
-    .offer-break{
+    .offer-break {
         margin-bottom: 50px;
     }
+    
 }

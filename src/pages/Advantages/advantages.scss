@@ -14,7 +14,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 .advantages-element {
-                    width: 460px;
+                    width: 510px;
                     padding: 35px 0px 35px 0px;
                     .advantages-element__title {
                         display: flex;
@@ -23,16 +23,16 @@
                         .advantage-img {
                             width: 60px;
                             height: 60px;
-                            border-radius: 100px;
                             margin-right: 30px;
-                            background-color: #ccc;
+                            -webkit-user-drag: none;
+                            
                         }
                         .advantage-title {
                             width: 365px;
                             font-family: "Nunito";
                             font-style: normal;
                             font-weight: 700;
-                            font-size: 28px;
+                            font-size: 24px;
                             line-height: 33px;
                             color: #242151;
                         }
@@ -41,7 +41,7 @@
                         font-family: "Nunito";
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 24px;
+                        font-size: 22px;
                         line-height: 33px;
                         color: #242151;
                     }
@@ -68,6 +68,11 @@
                                 line-height: 33px;
                             }
                         }
+                        .advantage-img {
+                            width: 50px;
+                            height: 50px;
+                            margin-right: 30px; 
+                        }
                         .advantages-element__description {
                             font-size: 22px;
                             line-height: 27px;
@@ -93,12 +98,17 @@
                         .advantages-element__title {
                             .advantage-title {
                                 width: 360px;
-                                font-size: 26px;
+                                font-size: 22px;
                                 line-height: 26px;
+                            }
+                            .advantage-img {
+                                width: 50px;
+                                height: 50px;
+                                margin-right: 30px; 
                             }
                         }
                         .advantages-element__description {
-                            font-size: 21px;
+                            font-size: 20px;
                             line-height: 26px;
                         }
                     }
@@ -107,8 +117,6 @@
         }
     }
 }
-
-
 
 @media screen and (max-width: 570px) {
     .advantages {
@@ -124,6 +132,8 @@
                         .advantages-element__title {
                             margin-bottom: 15px;
                             .advantage-img {
+                                width: 45px;
+                                height: 45px;
                                 margin-right: 20px;
                             }
                             .advantage-title {

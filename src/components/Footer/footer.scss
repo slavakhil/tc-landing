@@ -64,10 +64,10 @@
                 width: 40px;
                 height: 40px;
                 border-radius: 100%;
-                background-color: #ccc;
                 margin-left: 25px;
                 margin-right: 25px;
                 cursor: pointer;
+                -webkit-user-drag: none;
             }
         }
     }

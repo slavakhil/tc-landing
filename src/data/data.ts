@@ -1,3 +1,15 @@
+import advant1 from '../assets/advant1.svg'
+import advant2 from '../assets/advant2.svg'
+import advant3 from '../assets/advant3.svg'
+import advant4 from '../assets/advant4.svg'
+import advant5 from '../assets/advant5.svg'
+import advant6 from '../assets/advant6.svg'
+import work1 from '../assets/work1.svg'
+import work2 from '../assets/work2.svg'
+import work3 from '../assets/work3.svg'
+import work4 from '../assets/work4.svg'
+import work5 from '../assets/work5.svg'
+
 export const data = {
     offer: {
         title: "TenderChad",
@@ -28,28 +40,34 @@ export const data = {
         title: 'Преимущества',
         adv: [
             {
-                title: 'Узконаправленное решение',
-                description: 'asdasd asd asdas dasdas dasd as das das das dasd asdaadsasas as dasd '
+                title: 'Анализ тендеров',
+                description: 'При помощи нейронной сети мы подберем тендеры, которые подходят именно Вам.',
+                image: advant1
             },
             {
-                title: 'Ранжирование и сортировка',
-                description: 'asdasd'
+                title: 'Удобный и простой интерфейс',
+                description: 'Отсутствие перегруженного функционала и простая навигация поможет быстро и без сторонней помощи использовать наш сервис.',
+                image: advant2
             },
             {
                 title: 'Расширенный поиск',
-                description: 'asdasd'
+                description: 'Осуществляйте поиск не только по ключевым словам, но и по нужным Вам технологиям и другим критериям.',
+                image: advant3
             },
             {
                 title: 'Выдача отчетов',
-                description: 'asdasd'
+                description: 'Удобное и наглядное представление информации по тендерам в виде готовых отчетов.',
+                image: advant4
             },
             {
                 title: 'Оценка релевантности',
-                description: 'asdasd'
+                description: 'Уберите из всего списка неподходящие тендеры. Сконцентрируйтесь на нужных и важных для Вас.',
+                image: advant5
             },
             {
-                title: 'Экономия времени и ресурсов',
-                description: 'asdasd'
+                title: 'Веб просмотр документов',
+                description: 'Не тратьте время на скачивание всей тендерной документации, просматривайте нужную информацию напрямую в сервисе.',
+                image: advant6
             }
         ]
         
@@ -62,24 +80,29 @@ export const data = {
         title: 'Как это работает?',
         cards: [
             {
-                title: 'Клиент формирует запрос',
-                description: 'asdasdasd'
+                title: 'Создание поискового запроса',
+                description: 'Пользователь создает поисковый запрос, содержащий как и ключевые параметры для поиска, так и дополнительные параметры для анализа тендера.',
+                image: work1
             },
             {
-                title: 'Поиск релевантных тендеров',
-                description: 'asdasdasd'
+                title: 'Поиск тендера',
+                description: 'TenderChad осуществляет поиск и сбор всех тендерных заявок, удовлетворяющих пользовательскому запросу.',
+                image: work2
             },
             {
                 title: 'Обработка информации',
-                description: 'asdasdasd'
+                description: 'При помощи нейронной сети TenderChad проводит оценку релевантности всех найденных тендеров по их сопроводительной документации.',
+                image: work3
             },
             {
                 title: 'Формирование отчета',
-                description: 'asdasdasd'
+                description: 'На основе обработанной информация TenderChad подготавливает сводный отчет и отчеты о каждом тендере',
+                image: work4
             },
             {
                 title: 'Выдача результата',
-                description: 'asdasdasd'
+                description: 'В результате пользователь получает подробную информацию в удобном формате о текущих тендерных закупках и на основании ее принимает окончательное решение',
+                image: work5
             },
         ]
         

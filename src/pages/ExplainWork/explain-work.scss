@@ -6,8 +6,17 @@
 }
 .mobile{
     flex-direction: row;
-        justify-content: space-between;
+    justify-content: space-between;
     display: none;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.extra-mobile{
+    flex-direction: column;
+    display: none;
+    margin-bottom: 30px;
+
 }
 
 .web{
@@ -15,24 +24,52 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 35px;
+}
+.schema{
+    -webkit-user-drag: none;
+}
+.schema1{
+    -webkit-user-drag: none;
+}
+.schema2{
+    -webkit-user-drag: none;
+}
+.schema3{
+    -webkit-user-drag: none;
 }
 
 .web .explain-cards{
     display: flex;
     flex-direction: column;
+    
+}
+
+.web .explain-card__element:nth-child(3){
+    height: 250px;
 }
 
 .web .explain-card__element{
     display: flex;
     flex-direction: column;
+    height: 499px;
+    width: 360px;
     .card-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
         .card-img{
-
+            width: 60px;
+            height: 60px;
+            margin-right: 30px;
+            -webkit-user-drag: none;
         }
         .card-name{
-            font-family: 'Nunito';
+            font-family: "Nunito";
             font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             font-size: 24px;
             line-height: 33px;
             color: #242151;
@@ -42,33 +79,82 @@
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 22px;
         line-height: 33px;
         color: #242151;
     }
 }
 
-
+.mobile .explain-card__element:nth-child(3){
+    height: 303px;
+}
 .mobile .explain-card__element{
     display: flex;
     flex-direction: column;
+    width: 390px;
+    height: 273px;
     .card-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
         .card-name{
-            font-family: 'Nunito';
+            font-family: "Nunito";
             font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
+            font-weight: 700;
+            font-size: 24px;
             line-height: 33px;
-                            
             color: #242151;
         }
+    }
+    .card-img{
+        margin-right: 20px;
     }
     .card-description{
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 400;
         font-size: 22px;
-        line-height: 27px;
+        line-height: 33px;
+        color: #242151;
+    }
+}
+
+.extra-mobile .explain-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .schema-element{
+        width: 180px;
+    }
+}
+
+.extra-mobile .explain-card__element{
+    width: 300px;
+    .card-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 7px;
+        .card-name{
+            font-family: "Nunito";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            color: #242151;
+        }
+    }
+    .card-img{
+        margin-right: 20px;
+        width: 80px;
+    }
+    .card-description{
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
         color: #242151;
     }
 }
@@ -104,15 +190,23 @@
     .schema1, .schema3{
         display: none;
     }
+
+    .mobile .explain-card__element:nth-child(3){
+        height: 245px;
+    }
+
     .mobile .explain-card__element{
+        height: 231px;
+        width: 297px;
         .card-title{
+            margin-bottom: 10px;
             .card-name{
-                font-size: 21px;
+                font-size: 22px;
                 line-height: 26px;
             }
         }
         .card-description{
-            font-size: 21px;
+            font-size: 18px;
             line-height: 26px;
         }
     }
@@ -123,26 +217,10 @@
         display: none;
     }
     .mobile{
-        width: 300px;
-        display: flex;
-    }
-    
-    .schema3{
-        display: block;
-    }
-    .schema1, .schema2{
         display: none;
     }
-    .mobile .explain-card__element{
-        .card-title{
-            .card-name{
-                font-size: 16px;
-                line-height: 20px;
-            }
-        }
-        .card-description{
-            font-size: 16px;
-            line-height: 20px;
-        }
+    .extra-mobile{
+        width: 300px;
+        display: flex;
     }
 }

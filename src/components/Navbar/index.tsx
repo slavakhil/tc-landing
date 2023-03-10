@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./navbar.scss";
-import { Anchor, Drawer, Button } from "antd";
-const { Link } = Anchor;
+import { Anchor, Drawer } from "antd";
+import { FiMenu, FiX } from "react-icons/fi";
 
 export const Navbar: React.FC = () => {
   const [visible, setVisible] = useState(false);
 
   const items = [
     {
-      key: "about1",
-      href: "#about1",
+      key: "about",
+      href: "#about",
       title: "О системе",
     },
     {
@@ -46,7 +46,7 @@ export const Navbar: React.FC = () => {
       <div className="header">
         <div className="logo">
           <div className="fas fa-bolt"></div>
-          <a className="title-header" href="d">
+          <a className="title-header" href="https://dev-inside.ru">
             DevInside
           </a>
         </div>
@@ -54,9 +54,13 @@ export const Navbar: React.FC = () => {
           <Anchor targetOffset={100} items={items} />
         </div>
         <div className="mobileVisible">
-          <Button type="primary" onClick={showDrawer}>
+          {/* <Button type="primary" onClick={showDrawer}>
             <i className="fas fa-bars"></i>
-          </Button>
+          </Button> */}
+          <div className="burger" onClick={showDrawer}>
+            <FiMenu size={30} />
+          </div>
+          
           <Drawer
             placement="right"
             closable={false}
@@ -64,7 +68,7 @@ export const Navbar: React.FC = () => {
             open={visible}
           >
             <div className="mobile-close" onClick={onClose}>
-              X
+              <FiX size={30}/>
             </div>
             <Anchor targetOffset={120} items={items} />
           </Drawer>

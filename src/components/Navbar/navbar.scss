@@ -76,13 +76,35 @@ text-align: center;
 color: #242151;
   }
 
-  .mobile-close{
-    
+  .burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: #ccc;
     cursor: pointer;
+    transition: 0.5s;
+    background-color: #a7ccff;
+    &:hover{
+      background-color: #60a2ff;
+      transition: 0.5s;
+    }
+  }
+  .mobile-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #a7ccff;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+      background-color: #60a2ff;
+      transition: 0.5s;
+    }
   }
   
   .header .ant-anchor-link:before,

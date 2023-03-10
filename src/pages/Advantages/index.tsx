@@ -2,7 +2,7 @@ import React from "react";
 import { SpeechBubble } from "../../components/Bubbles/SpeechBubble";
 import { Title } from "../../components/UI/Title";
 import { data } from "../../data/data";
-import imageSpeech from "../../assets/speech2.png";
+import imageSpeech from "../../assets/speech2.svg";
 import "./advantages.scss";
 
 export const Advantages: React.FC = () => {
@@ -18,7 +18,7 @@ export const Advantages: React.FC = () => {
             <div key={index} className="row">
               <div className="advantages-element">
                 <div className="advantages-element__title">
-                  <img className="advantage-img" alt=""></img>
+                  <img className="advantage-img" src={dataAdvantages.adv[index].image} alt=""></img>
                   <div className="advantage-title">{dataAdvantages.adv[index].title}</div>
                 </div>
                 <div className="advantages-element__description">
@@ -27,7 +27,7 @@ export const Advantages: React.FC = () => {
               </div>
               <div className="advantages-element">
                 <div className="advantages-element__title">
-                  <img className="advantage-img" alt=""></img>
+                  <img className="advantage-img" src={dataAdvantages.adv[index + 1].image} alt=""></img>
                   <div className="advantage-title">{dataAdvantages.adv[index + 1].title}</div>
                 </div>
                 <div className="advantages-element__description">
