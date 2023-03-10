@@ -48,7 +48,7 @@ export const Contacts: React.FC = () => {
   const onSubmit = async (data: IFormInputs) => {
     const id = toast.loading("Ваши контакты отправляются..");
     await axios
-      .post("http://localhost:5000/mail", { data })
+      .post("http://62.113.105.104:5000/mail", { data })
       .then(() => {
         toast.update(id, {
           render: "Контакты были успешно отправлены!",
