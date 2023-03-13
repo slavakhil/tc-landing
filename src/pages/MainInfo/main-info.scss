@@ -1,4 +1,5 @@
 .info {
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +9,7 @@
         flex-direction: row;
         justify-content: center;
         .info-info {
+            z-index: 100;
             display: flex;
             flex-direction: column;
             margin-left: 20px;
@@ -32,10 +34,25 @@
             }
         }
         .image-info {
+            z-index: 3;
             width: 480px;
             height: 430px;
             -webkit-user-drag: none;
         }
+    }
+}
+
+.circle {
+    z-index: 0;
+    background-image: url('../../assets/circle-right.svg');
+    .right {
+        
+        position: absolute;
+        right: 0;
+        margin-top: 100px
+        
+    }
+    .left {
     }
 }
 

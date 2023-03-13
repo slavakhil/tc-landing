@@ -1,14 +1,17 @@
 .inp-container {
+    z-index: 3;
     margin-bottom: 20px;
 }
 
 .lbl {
+    z-index: 3;
     margin-left: 5px;
     font-size: 20px;
     font-family: "Nunito";
 }
 
 .inp {
+    z-index: 3;
     width: 530px;
     height: 40px;
     background: #e4fff9;
@@ -30,6 +33,7 @@
 }
 
 .inp-comm {
+    z-index: 3;
     height: 130px;
     resize: none;
     font-size: 24px;

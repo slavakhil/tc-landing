@@ -8,6 +8,7 @@ import { Card } from "../../components/Card";
 import { Bubble } from "../../components/Bubbles/Bubble";
 import { SpeechBubble } from "../../components/Bubbles/SpeechBubble";
 import { Anchor } from "antd";
+import circle from '../../assets/circles.svg'
 
 export const Offer: React.FC = () => {
   const dataTitle = data.offer;
@@ -33,6 +34,9 @@ export const Offer: React.FC = () => {
         </div>
         <img className="image-offer" src={imageTCMain} alt="" />
       </div>
+      {/* <div className="circle">
+        <img className="center" src={circle} />
+      </div> */}
       <SpeechBubble
         type="text1"
         image={imageSpeech}

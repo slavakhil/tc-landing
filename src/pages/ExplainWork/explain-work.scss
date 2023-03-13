@@ -1,10 +1,12 @@
 .explain-work-container{
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 }
 .mobile{
+    z-index: 3;
     flex-direction: row;
     justify-content: space-between;
     display: none;
@@ -13,6 +15,7 @@
 }
 
 .extra-mobile{
+    z-index: 3;
     flex-direction: column;
     display: none;
     margin-bottom: 30px;
@@ -20,6 +23,7 @@
 }
 
 .web{
+    z-index: 3;
     width: 1080px;
     display: flex;
     flex-direction: row;
@@ -28,29 +32,36 @@
     margin-top: 35px;
 }
 .schema{
+    z-index: 3;
     -webkit-user-drag: none;
 }
 .schema1{
+    z-index: 3;
     -webkit-user-drag: none;
 }
 .schema2{
+    z-index: 3;
     -webkit-user-drag: none;
 }
 .schema3{
+    z-index: 3;
     -webkit-user-drag: none;
 }
 
 .web .explain-cards{
+    z-index: 3;
     display: flex;
     flex-direction: column;
     
 }
 
 .web .explain-card__element:nth-child(3){
+    z-index: 3;
     height: 250px;
 }
 
 .web .explain-card__element{
+    z-index: 3;
     display: flex;
     flex-direction: column;
     height: 499px;
@@ -61,6 +72,7 @@
         align-items: center;
         margin-bottom: 15px;
         .card-img{
+            z-index: 3;
             width: 60px;
             height: 60px;
             margin-right: 30px;
