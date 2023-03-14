@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b41c3d4.css",
-    "main.js": "/static/js/main.c7405926.js",
+    "main.css": "/static/css/main.4fc9b593.css",
+    "main.js": "/static/js/main.68974e82.js",
     "static/media/tenderChadMain1.svg": "/static/media/tenderChadMain1.a25b2deda56887dcdbd7b1637f848638.svg",
     "static/media/tenderChadMain2.svg": "/static/media/tenderChadMain2.fc15d7eebb471b0398d9ea3e8c7878c1.svg",
     "static/media/schema2.svg": "/static/media/schema2.41ae0d13f80189c62c5d7b6a9764599b.svg",
@@ -37,11 +37,11 @@
     "static/media/circle-right.svg": "/static/media/circle-right.0cc253d90c42006948ee6688ad50547f.svg",
     "index.html": "/index.html",
     "static/media/circles.svg": "/static/media/circles.037c36fe96833b73116e4813bb6b8950.svg",
-    "main.8b41c3d4.css.map": "/static/css/main.8b41c3d4.css.map",
-    "main.c7405926.js.map": "/static/js/main.c7405926.js.map"
+    "main.4fc9b593.css.map": "/static/css/main.4fc9b593.css.map",
+    "main.68974e82.js.map": "/static/js/main.68974e82.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b41c3d4.css",
-    "static/js/main.c7405926.js"
+    "static/css/main.4fc9b593.css",
+    "static/js/main.68974e82.js"
   ]
 }

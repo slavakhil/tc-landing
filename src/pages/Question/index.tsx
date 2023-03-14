@@ -6,7 +6,7 @@ import imageSpeech from '../../assets/speech3.svg'
 import './question.scss'
 
 const handleClick = () => {
-    window.open("http://twitter.com/saigowthamr");
+    window.open("https://t.me/Do6piu_KoT");
   };
 
 export const Question: React.FC = () => {
