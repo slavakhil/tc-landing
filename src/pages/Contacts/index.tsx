@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -45,10 +45,13 @@ export const Contacts: React.FC = () => {
     resolver: yupResolver(schema),
   });
 
+  const [isMessageSent, setIsMessageSent] = useState<boolean>(false);
+
   const onSubmit = async (data: IFormInputs) => {
+    setIsMessageSent(true);
     const id = toast.loading("Ваши контакты отправляются..");
     await axios
-      .post("http://62.113.105.104:5000/mail", { data })
+      .post("https://akiremik.beget.app/mail", { data })
       .then(() => {
         toast.update(id, {
           render: "Контакты были успешно отправлены!",
@@ -63,6 +66,7 @@ export const Contacts: React.FC = () => {
           isLoading: false,
         });
       })
+      .finally(() => setIsMessageSent(false))
       .catch(() => {
         toast.update(id, {
           render: "Контакты не были отправлены. Попробуйте позже.",
@@ -172,7 +176,7 @@ export const Contacts: React.FC = () => {
         </div>
 
         <div className="submit-form">
-          <input className="btn-2" type="submit" />
+          <input className="btn-2" type="submit" disabled={isMessageSent} />
           <div className="contacts-info">{dataContacts.info}</div>
         </div>
       </form>

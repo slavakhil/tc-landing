@@ -1,4 +1,4 @@
-.contacts-container{
+.contacts-container {
     z-index: 3;
     position: relative;
     display: flex;
@@ -7,17 +7,16 @@
     margin-bottom: 100px;
 }
 
-
-.submit-form{
+.submit-form {
     z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
 }
-.contacts-info{
+.contacts-info {
     z-index: 3;
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -29,14 +28,13 @@
 }
 
 @media screen and (max-width: 570px) {
-    .contacts-container{
+    .contacts-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
     }
-    .contacts-title{
-        font-family: 'Nunito';
+    .contacts-title {
+        font-family: "Nunito";
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -46,9 +44,9 @@
         color: #242151;
         margin-bottom: 60px;
     }
-    
-    .contacts-info{
-        font-family: 'Nunito';
+
+    .contacts-info {
+        font-family: "Nunito";
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -62,94 +60,92 @@
 
 .inp-container {
     z-index: 3;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     z-index: 3;
 }
 
-.lbl{
+.lbl {
     z-index: 3;
     margin-left: 5px;
     font-size: 20px;
-    font-family: 'Nunito';
+    font-family: "Nunito";
 }
 
-.inp{
+.inp {
     z-index: 3;
     width: 530px;
     height: 40px;
-    background: #E4FFF9;
-    border: 1px solid #FFFFFF;
-    font-family: 'Nunito';
-    box-shadow: 0px 0px 5px #FFFFFF;
+    background: #e4fff9;
+    border: 1px solid #ffffff;
+    font-family: "Nunito";
+    box-shadow: 0px 0px 5px #ffffff;
     border-radius: 10px;
     font-size: 24px;
     padding: 7.5px 14.5px 6px 14.5px;
     margin-top: 7px;
-    &:focus{
+    &:focus {
         outline: none;
-        background-color: #EDFFFB;
+        background-color: #edfffb;
     }
-    &:required{
-        border: 1px solid #FF0000;
+    &:required {
+        border: 1px solid #ff0000;
     }
 }
 
-.inp-error{
+.inp-error {
     z-index: 3;
-    border-color: #FF0000;
-    box-shadow: 0px 0px 5px #FF0000;
+    border-color: #ff0000;
+    box-shadow: 0px 0px 5px #ff0000;
 }
-.error-message{
+.error-message {
     z-index: 3;
-    font-family: 'Nunito';
+    font-family: "Nunito";
     margin-left: 5px;
     margin-top: 5px;
-    color:#FF0000
+    color: #ff0000;
 }
 
-.inp-comm{
+.inp-comm {
     z-index: 3;
     height: 130px;
     resize: none;
     font-size: 24px;
 }
 
-
 @media screen and (max-width: 750px) {
     .inp-container {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
-    
-    .lbl{
+
+    .lbl {
         margin-left: 5px;
         font-size: 20px;
-        font-family: 'Nunito';
+        font-family: "Nunito";
     }
-    
-    .inp{
+
+    .inp {
         width: 450px;
         height: 40px;
-        background: #E4FFF9;
-        border: 1px solid #FFFFFF;
-        font-family: 'Nunito';
-        box-shadow: 0px 0px 5px #FFFFFF;
+        background: #e4fff9;
+        border: 1px solid #ffffff;
+        font-family: "Nunito";
+        box-shadow: 0px 0px 5px #ffffff;
         border-radius: 10px;
         font-size: 21px;
         padding: 7.5px 14.5px 6px 14.5px;
         margin-top: 7px;
-        &:hover{
-            
+        &:hover {
         }
-        &:focus{
+        &:focus {
             outline: none;
         }
-        &:required{
-            border: 1px solid #FF0000;
-            box-shadow: 0px 0px 5px #FF0000;
+        &:required {
+            border: 1px solid #ff0000;
+            box-shadow: 0px 0px 5px #ff0000;
         }
     }
-    
-    .inp-comm{
+
+    .inp-comm {
         height: 130px;
         resize: none;
         font-size: 24px;
@@ -158,102 +154,102 @@
 
 @media screen and (max-width: 570px) {
     .inp-container {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
-    
-    .lbl{
+
+    .lbl {
         margin-left: 5px;
         font-size: 17px;
-        font-family: 'Nunito';
+        font-family: "Nunito";
     }
-    
-    .inp{
+
+    .inp {
         width: 300px;
         height: 40px;
-        background: #E4FFF9;
-        border: 1px solid #FFFFFF;
-        font-family: 'Nunito';
-        box-shadow: 0px 0px 5px #FFFFFF;
+        background: #e4fff9;
+        border: 1px solid #ffffff;
+        font-family: "Nunito";
+        box-shadow: 0px 0px 5px #ffffff;
         border-radius: 10px;
         font-size: 17px;
         padding: 7.5px 14.5px 6px 14.5px;
         margin-top: 7px;
-        &:hover{
-            
+        &:hover {
         }
-        &:focus{
+        &:focus {
             outline: none;
         }
-        &:required{
-            border: 1px solid #FF0000;
-            box-shadow: 0px 0px 5px #FF0000;
+        &:required {
+            border: 1px solid #ff0000;
+            box-shadow: 0px 0px 5px #ff0000;
         }
     }
-    
-    .inp-comm{
+
+    .inp-comm {
         height: 130px;
         resize: none;
         font-size: 24px;
     }
-    .submit-form{
-        
+    .submit-form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .contacts-info{
-            width: 300px
+        .contacts-info {
+            width: 300px;
         }
     }
 }
 
-.btn-2{
-    font-family: 'Nunito';
+.btn-2 {
+    font-family: "Nunito";
     font-weight: 700;
     font-size: 24px;
     padding: 16px 32px;
     width: 300px;
     height: 80px;
     border: none;
-    background: #95D8F7;
+    background: #95d8f7;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 0px 30px #FFFFFF;
+    box-shadow: 0px 0px 30px #ffffff;
     border-radius: 144px;
     color: #242151;
     transition: 0.3s;
     cursor: pointer;
-    &:hover{
-        box-shadow: 0px 0px 60px #FFFFFF;
+    &:hover {
+        box-shadow: 0px 0px 60px #ffffff;
     }
-    &:active{
-        background: #53BCED;
-        box-shadow: 0px 0px 60px #FFFFFF;
+    &:active {
+        background: #53bced;
+        box-shadow: 0px 0px 60px #ffffff;
+    }
+    &:disabled {
+        background: #ccc;
     }
 }
 
 @media screen and (max-width: 570px) {
-    .btn-2{
-        font-family: 'Nunito';
+    .btn-2 {
+        font-family: "Nunito";
         font-weight: 700;
         font-size: 17px;
         padding: 16px 32px;
         width: 250px;
         height: 60px;
         border: none;
-        background: #95D8F7;
+        background: #95d8f7;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0px 0px 30px #FFFFFF;
+        box-shadow: 0px 0px 30px #ffffff;
         border-radius: 144px;
         color: #242151;
         transition: 0.3s;
         cursor: pointer;
-        
-        &:hover{
-            box-shadow: 0px 0px 60px #FFFFFF;
+
+        &:hover {
+            box-shadow: 0px 0px 60px #ffffff;
         }
-        &:active{
-            background: #53BCED;
-            box-shadow: 0px 0px 60px #FFFFFF;
+        &:active {
+            background: #53bced;
+            box-shadow: 0px 0px 60px #ffffff;
         }
     }
 }
-
