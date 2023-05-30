@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navbar.scss";
 import { Anchor, Drawer } from "antd";
 import { FiMenu, FiX } from "react-icons/fi";
+import logo from "../../assets/logo.png";
 
 export const Navbar: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -46,8 +47,8 @@ export const Navbar: React.FC = () => {
       <div className="header">
         <div className="logo">
           <div className="fas fa-bolt"></div>
-          <a className="title-header" href="https://dev-inside.ru">
-            DevInside
+          <a target="_blank" rel="noreferrer" href="https://dev-inside.ru/">
+            <img alt="logo" className="logo-img" src={logo} />
           </a>
         </div>
         <div className="mobileHidden">
@@ -60,7 +61,7 @@ export const Navbar: React.FC = () => {
           <div className="burger" onClick={showDrawer}>
             <FiMenu size={30} />
           </div>
-          
+
           <Drawer
             placement="right"
             closable={false}
@@ -68,7 +69,7 @@ export const Navbar: React.FC = () => {
             open={visible}
           >
             <div className="mobile-close" onClick={onClose}>
-              <FiX size={30}/>
+              <FiX size={30} />
             </div>
             <Anchor targetOffset={120} items={items} />
           </Drawer>
