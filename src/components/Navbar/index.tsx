@@ -24,6 +24,11 @@ export const Navbar: React.FC = () => {
       title: "Как это работает",
     },
     {
+      key: "support",
+      href: "#support",
+      title: "Поддержка",
+    },
+    {
       key: "contacts",
       href: "#contacts",
       title: "Контакты",

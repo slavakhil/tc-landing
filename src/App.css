@@ -53,7 +53,8 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 7250px;
+  bottom: 0;
+  top: 7650px;
 }
 
 @media screen and (max-width: 1160px) {
@@ -80,7 +81,7 @@
   
   .circle .center-bottom{
     width: 750px;
-    top: 8050px;
+    top: 8450px;
   }
 }
 
@@ -108,7 +109,7 @@
   
   .circle .center-bottom{
     width: 570px;
-    top: 7550px;
+    top: 7850px;
   }
 }
 
@@ -136,6 +137,6 @@
   
   .circle .center-bottom{
     width: 350px;
-    top: 7450px;
+    top: 7800px;
   }
 }
